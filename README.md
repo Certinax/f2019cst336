@@ -17,3 +17,13 @@ Then add all files, commit them and push to github
 * ```git add .```
 * ```git commit -m "Commit message"```
 * ```git push```
+
+
+If the .idea folder accidentally gets added to the repository, do following commands
+* add .idea to .gitignore
+* Do the following commands in terminal
+```
+git rm -r --cached .idea
+git commit -m "Delete message"
+git push
+``` 
