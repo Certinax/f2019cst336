@@ -13,6 +13,11 @@ header, main, nav, footer {
     text-align: center;
 }
 
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
 h1 {
     font-family: 'Pacifico', cursive;
     font-size: 4em;
@@ -45,7 +50,6 @@ nav a:hover { /* pseudo class */
 
 #welcomeText {
     text-align: left;
-
 }
 
 #me img {
