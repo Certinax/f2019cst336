@@ -1,12 +1,7 @@
-html { /* Creating these rules to make sure the site fills a whole web browser page */
-    position: relative;
-    min-height: 100%;
-}
-
 body {
     background-color: black;
     color: gray;
-    margin-bottom: 100px;
+    height: 100%;
 }
 
 header, main, nav, footer {
@@ -16,6 +11,7 @@ header, main, nav, footer {
 main {
     width: 90%;
     margin: 20px auto;
+    min-height: calc(100vh - 400px); /* This is added to keep footer down in bottom of page even with small amount of content on the page*/
 }
 
 h1 {
@@ -111,11 +107,6 @@ footer {
     color: white;
     font-size: 0.9em;
     text-align: center;
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    left: 0;
-    bottom: 0;
 }
 
 footer img {
