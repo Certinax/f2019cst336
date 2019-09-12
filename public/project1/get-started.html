@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto&display=swap" rel="stylesheet">
+    <title>CST:336 | Get Started</title>
+</head>
+<body>
+<header>
+    <div class="header-logo">
+        <a href="/project1"><img id="ctx-logo" src="img/certinax-logo1.svg" alt="certinax-logo"></a>
+    </div>
+    <div class="header-title">
+        <h1>Computer science</h1>
+        <p>- TensorFlow.js</p>
+    </div>
+    <div class="header-links">
+        <nav>
+            <ul>
+                <li><a class="btn" href="/project1">Home</a></li>
+                <li class="active"><a class="btn" href="get-started.html">Get Started</a></li>
+                <li><a class="btn" href="demo.html">Demo</a></li>
+                <li><a class="btn" href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="link-container">
+            <a href="#"><img class="ext-link-logo" src="img/github-logo.svg" alt="Github logo"></a>
+            <a href="#"><img class="ext-link-logo" src="img/linkedin-logo.svg" alt="Linked logo"></a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="main-container">
+        <div class="main-card">
+            <div class="one-column">
+                <h4 style="text-align: center">Getting started</h4>
+                <hr>
+                <div class="text-content">
+                    <p>How to add TensorFlow.js to your project</p>
+                    <br>
+                    <p>Add with an import in head</p>
+                    <pre>
+                        <code><br>&lt;script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0">&lt;script&gt;</code>
+                    </pre>
+                    <br>
+                    <p>Or use npm/yarn</p>
+                    <pre>
+                        <code><br>npm install @tensorflow/tfjs</code>
+                    </pre>
+                    <br>
+                    <pre>
+                        <code><br>yarn add @tensorflow/tfjs</code>
+                    </pre>
+                    <br>
+                    <p>TensorFlow - What is a tensor?</p>
+                    <br />
+                    <p>A tensor is basically a generalization of vectors and matrices to higher dimensions. They can be viewed at as multidimensional array where you can additional information and data.</p>
+                    <br>
+                    <h4>Example on how to create a tensor from a flat array</h4>
+                    <pre>
+                        <code><br>const shape = [2,2];<br>const b = tf.tensor([1, 2, 3, 4], shape);<br>console.log('shape:', b.shape);<br>b.print();</code>
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="main-card">
+            <div class="one-column">
+                <h4 style="text-align: center">Illustration</h4>
+                <hr>
+                <div class="text-content">
+                    <p>Simple illustration between a vector, matrix and a 3-way tensor</p>
+                    <br />
+                    <img id="tensor-pic" src="img/tensor_example1.png" alt="Illustration of a tensor">
+                    <br>
+                    <a href="https://medium.com/@mohammadbashiri93/tensor-decomposition-in-python-f1aa2f9adbf4" target="_blank">[Picture source]</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+<footer>
+    <div class="box1">
+        <p>Phone: +1 628-629-4355 | +47 908 55 313</p>
+        <p>Email: mahrn@csumb.edu</p>
+    </div>
+    <div class="box2">
+        <p>Mathias Lund Ahrn | Certinax ©
+            <script>document.write(new Date().getFullYear())</script></p>
+    </div>
+    <div class="box3">
+
+    </div>
+</footer>
+</html>

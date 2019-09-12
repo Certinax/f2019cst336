@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Now you see it</title>
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <img id="see" src="img/now-you-see-me.png" alt="Now you see me">
+
+    <div class="btn">
+        <button id="changeButton">Click me!</button>
+        <button id="change">Send the cat to the moon!</button>
+    </div>
+    <script>
+        let seeImage = document.getElementById("see");
+        const changeButton = document.getElementById("changeButton");
+
+        changeButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log(e);
+            seeImage.setAttribute("src", "img/now-you-dont.png");
+        });
+
+        document.getElementById("change").addEventListener("click", () => {
+            seeImage.setAttribute("class", "hide");
+        })
+    </script>
+</body>
+</html>
