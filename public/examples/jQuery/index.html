@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Now you see it</title>
+    <style>
+        .hide {
+            display: none;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<img id="see" src="img/now-you-see-me.png" alt="Now you see me">
+
+<div class="btn">
+    <button id="changeButton">Click me!</button>
+    <button id="moon">Send the cat to the moon!</button>
+</div>
+
+<script>
+    /*let seeImage = document.getElementById("see");*/
+    let seeImage = $("#see");
+
+    /*const changeButton = document.getElementById("changeButton");*/
+    let changeButton = $("#changeButton");
+
+    changeButton.on('click', (e) => {
+        console.log(e);
+        /*$("#see").setAttribute("src", "img/now-you-dont.png");*/
+        seeImage.attr("src", "img/now-you-dont.png");
+    });
+    /*changeButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log(e);
+        seeImage.setAttribute("src", "img/now-you-dont.png");
+    });*/
+
+    /*document.getElementById("change").addEventListener("click", () => {
+        seeImage.setAttribute("class", "hide");
+    });*/
+
+    $("#moon")
+        .on('click', onMoonClick())
+        .on('touchstart', onMoonClick());
+
+    function onMoonClick(e) {
+        seeImage.attr("class", "hide");
+    }
+</script>
+</body>
+
+</html>

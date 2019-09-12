@@ -6,15 +6,102 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="contact-list.css">
     <title>Contacts</title>
 </head>
 <body>
+<script>
+    function printContact(contact) {
+        let contactList = document.getElementById("contact-list");
+
+        //<li class="list-group-item">
+        let contactListItem = document.createElement("li");
+        contactListItem.setAttribute("class", "list-group-item");
+        contactList.appendChild(contactListItem);
+        //    <div class="row w-100">
+        let divRow = document.createElement("div");
+        divRow.setAttribute("class", "row w-100");
+        contactListItem.appendChild(divRow);
+        //        <div class="col-12 col-sm-6 col-md-3 px-0">
+        let pictureColumnDiv = document.createElement("div");
+        pictureColumnDiv.setAttribute("class", "col-12 col-sm6 col-md-3 px-0");
+        divRow.appendChild(pictureColumnDiv);
+        //            <img src="http://demos.themes.guide/bodeo/assets/images/users/m101.jpg" alt="Mike Anamendolla" class="rounded-circle mx-auto d-block img-fluid">
+        let mikePic = document.createElement("img");
+        mikePic.setAttribute("src", "http://demos.themes.guide/bodeo/assets/images/users/m101.jpg");
+        mikePic.setAttribute("alt", "Mike Anamendolla");
+        mikePic.setAttribute("class", "rounded-circle mx-auto d-block img-fluid");
+        pictureColumnDiv.appendChild(mikePic);
+        //        </div>
+        //        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+        let infoColumn = document.createElement("div");
+        infoColumn.setAttribute("class", "col-12 col-sm-6 col-md-9 text-center text-sm-left");
+        divRow.appendChild(infoColumn);
+        //            <span class="fa fa-mobile fa-2x text-success float-right pulse" title="online now"></span>
+        let status = document.createElement("span");
+        status.setAttribute("class", "fa fa-mobile fa-2x text-success float-right pulse");
+        status.setAttribute("title", "online now");
+        infoColumn.appendChild(status);
+        //            <label class="name lead">Mike Anamendolla</label>
+        let label = document.createElement("label");
+        label.setAttribute("class", "name lead");
+        label.innerHTML = "Mike Anamendolla";
+        infoColumn.appendChild(label);
+        //            <br>
+        let linebreak = document.createElement("br");
+        infoColumn.appendChild(linebreak);
+        //            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="5842 Hillcrest Rd"></span>
+        let addressActionSpan = document.createElement("span");
+        addressActionSpan.setAttribute("class", "fa fa-map-marker fa-fw text-muted");
+        addressActionSpan.setAttribute("data-toggle", "tooltip");
+        addressActionSpan.setAttribute("title", "");
+        addressActionSpan.setAttribute("data-original-title", "5842 Hillcrest Rd");
+        infoColumn.appendChild(addressActionSpan);
+        //            <span class="text-muted">5842 Hillcrest Rd</span>
+        let addressSpan = document.createElement("span");
+        addressSpan.setAttribute("class", "text-muted");
+        addressSpan.innerHTML = "5842 Hillcrest Rd";
+        infoColumn.appendChild(addressSpan);
+        //            <br>
+        let addressLinebreak = document.createElement("br");
+        infoColumn.appendChild(addressLinebreak);
+        //            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="(870) 288-4149"></span>
+        let phoneActionSpan = document.createElement("span");
+        phoneActionSpan.setAttribute("class", "fa fa-phone fa-fw text-muted");
+        phoneActionSpan.setAttribute("data-toggle", "tooltip");
+        phoneActionSpan.setAttribute("data-original-title", "(870) 288-4149");
+        phoneActionSpan.setAttribute("title", "");
+        infoColumn.appendChild(phoneActionSpan);
+        //            <span class="text-muted small">(870) 288-4149</span>
+        let phoneSpan = document.createElement("span");
+        phoneSpan.setAttribute("class", "text-muted small");
+        phoneSpan.innerHTML = "(870) 288-4149";
+        infoColumn.appendChild(phoneSpan);
+        //            <br>
+        let break3 = document.createElement("br");
+        infoColumn.appendChild(break3);
+        //            <span class="fa fa-envelope fa-fw text-muted" data-toggle="tooltip" data-original-title="" title=""></span>
+        let mailActionSpan = document.createElement("span");
+        mailActionSpan.setAttribute("class", "fa fa-envelope fa-fw text-muted");
+        mailActionSpan.setAttribute("data-toggle", "tooltip");
+        infoColumn.appendChild(mailActionSpan);
+        //            <span class="text-muted small text-truncate">mike.ana@example.com</span>
+        let mailSpan = document.createElement("span");
+        mailSpan.setAttribute("class", "text-muted small text-truncate");
+        mailSpan.innerHTML = "mike.ana@example.com";
+        infoColumn.appendChild(mailSpan);
+        //        </div>
+        //    </div>
+        //</li>
+    }
+</script>
 <div class="container">
     <div class="card card-default" id="card_contacts">
         <div id="contacts" class="panel-collapse collapse show" aria-expanded="true" style="">
             <ul class="list-group pull-down" id="contact-list">
-                <li class="list-group-item">
+                <script>
+                    printContact("Dummy");
+                </script>
+                <!--<li class="list-group-item">
                     <div class="row w-100">
                         <div class="col-12 col-sm-6 col-md-3 px-0">
                             <img src="http://demos.themes.guide/bodeo/assets/images/users/m101.jpg" alt="Mike Anamendolla" class="rounded-circle mx-auto d-block img-fluid">
@@ -77,89 +164,15 @@
 
                         </div>
                     </div>
-                </li>
+                </li>-->
             </ul>
             <!--/contacts list-->
         </div>
     </div>
     <!-- contacts card -->
-
 </div>
-<script>
-    function printContact(contact) {
-        let contactList = document.getElementById("contact-list");
-
-        //<li class="list-group-item">
-        let contactListItem = document.createElement("li");
-        contactListItem.setAttribute("class", "list-group-item");
-        contactList.appendChild(contactListItem);
-        //    <div class="row w-100">
-        let divRow = document.createElement("div");
-        divRow.setAttribute("class", "row w-100");
-        contactListItem.appendChild(divRow);
-        //        <div class="col-12 col-sm-6 col-md-3 px-0">
-        let pictureColumnDiv = document.createElement("div");
-        pictureColumnDiv.setAttribute("class", "col-12 col-sm6 col-md-3 px-0");
-        divRow.appendChild(pictureColumnDiv);
-        //            <img src="http://demos.themes.guide/bodeo/assets/images/users/m101.jpg" alt="Mike Anamendolla" class="rounded-circle mx-auto d-block img-fluid">
-        let mikePic = document.createElement("img");
-        mikePic.setAttribute("src", "http://demos.themes.guid/bodeo/assets/images/users/m101.jpg");
-        mikePic.setAttribute("alt", "Mike Anamendolla");
-        mikePic.setAttribute("class", "rounded-circle mx-auto d-block img-fluid");
-        pictureColumnDiv.appendChild(mikePic);
-        //        </div>
-        //        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
-        let infoColumn = document.createElement("div");
-        infoColumn.setAttribute("class", "col-12 col-sm-6 col-md-9 text-center text-sm-left");
-        divRow.appendChild(infoColumn);
-        //            <span class="fa fa-mobile fa-2x text-success float-right pulse" title="online now"></span>
-        let status = document.createElement("span");
-        status.setAttribute("class", "fa fa-mobile fa-2x text-success float-right pulse");
-        status.setAttribute("title", "online now");
-        infoColumn.appendChild(status);
-        //            <label class="name lead">Mike Anamendolla</label>
-        let label = document.createElement("label");
-        label.setAttribute("class", "name lead");
-        label.innerHTML = "Mike Anamendolla";
-        infoColumn.appendChild(label);
-        //            <br>
-        let linebreak = document.createElement("br");
-        infoColumn.appendChild(linebreak);
-        //            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="5842 Hillcrest Rd"></span>
-        let addressActionSpan = document.createElement("span");
-        addressActionSpan.setAttribute("class", "fa fa-map-marker fa-fw text-muted");
-        addressActionSpan.setAttribute("data-toggle", "tooltip");
-        addressActionSpan.setAttribute("data-original-title", "5842 Hillcrest Rd");
-        infoColumn.appendChild(addressActionSpan);
-        //            <span class="text-muted">5842 Hillcrest Rd</span>
-        let addressSpan = document.createElement("span");
-        addressSpan.setAttribute("class", "text-muted");
-        addressSpan.innerHTML("5842 Hillcrest Rd");
-        infoColumn.appendChild(addressSpan);
-        //            <br>
-        let addressLinebreak = document.createElement("br");
-        infoColumn.appendChild(addressLinebreak);
-        //            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="(870) 288-4149"></span>
-        let phoneActionSpan = document.createElement("span");
-        phoneActionSpan.setAttribute("class", "fa fa-phone fa-fw text-muted");
-        phoneActionSpan.setAttribute("data-toggle", "tooltip");
-        phoneActionSpan.setAttribute("data-original-title", "(870) 288-4149");
-        infoColumn.appendChild(phoneActionSpan);
-        //            <span class="text-muted small">(870) 288-4149</span>
-        let phoneSpan = document.createElement("span");
-        phoneSpan.
-        //            <br>
-        //            <span class="fa fa-envelope fa-fw text-muted" data-toggle="tooltip" data-original-title="" title=""></span>
-        //            <span class="text-muted small text-truncate">mike.ana@example.com</span>
-        //        </div>
-        //    </div>
-        //</li>
-    }
-</script>
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
 </body>
 </html>
