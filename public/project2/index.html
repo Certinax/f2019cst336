@@ -34,9 +34,6 @@
         <nav>
           <ul>
             <li class="active"><a class="btn" href="/project2">Home</a></li>
-            <!-- <li><a class="btn" href="#">SiteX</a></li>
-            <li><a class="btn" href="#">SiteY</a></li>
-            <li><a class="btn" href="#">SiteZ</a></li> -->
           </ul>
         </nav>
         <div class="link-container">
@@ -68,11 +65,12 @@
             <hr />
             <div class="text-content">
               <div class="form-style">
-                <form action="card.html" method="get">
+                <form id="signupForm" action="card.html" method="get">
                   <fieldset>
                     <legend>Info</legend>
                     <div class="input-container">
                       <label for="firstname">Firstname</label>
+                      <span class="error" id="firstnameError"></span>
                       <input
                         id="firstname"
                         type="text"
@@ -83,6 +81,7 @@
                     </div>
                     <div class="input-container">
                       <label for="lastname">Lastname</label>
+                      <span class="error" id="lastnameError"></span>
                       <input
                         id="lastname"
                         type="text"
@@ -92,6 +91,7 @@
                       />
                     </div>
                     <div class="input-container">
+                      <span class="error" id="emailError"></span>
                       <label for="email">Email</label>
                       <input
                         type="email"
@@ -133,9 +133,6 @@
                     </div>
                     <button type="submit" class="btn2" value="submit">
                       Generate Card
-                    </button>
-                    <button type="button" class="btn2-cancel" value="button">
-                      Reset
                     </button>
                   </fieldset>
                 </form>

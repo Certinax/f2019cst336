@@ -1,0 +1,35 @@
+.business-card {
+  border: 1px solid black;
+  box-shadow: var(--shadow);
+  display: flex;
+  /* background: #007bff; */
+  /* background: linear-gradient(to right, #0062e6, #33aeff); */
+  color: var(--primary);
+}
+
+.business-card:hover {
+  box-shadow: var(--shadow2);
+}
+
+.business-logo-section {
+  flex-grow: 1;
+}
+
+.business-content-section {
+  flex-grow: 4;
+}
+
+.business-logo {
+  display: block;
+  margin: 15px auto;
+  width: 75px;
+  height: 75px;
+}
+
+.business-content {
+  margin: 10px auto;
+}
+
+.business-content > div {
+  margin: 2px 0;
+}
