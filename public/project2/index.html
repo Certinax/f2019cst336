@@ -1,101 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
     <!--<link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto&display=swap" rel="stylesheet">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
     <title>CST:336 | Home</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header-logo">
-            <a href="/project1"><img id="ctx-logo" src="img/certinax-logo1.svg" alt="certinax-logo"></a>
+      <div class="header-logo">
+        <a href="/project1"
+          ><img id="ctx-logo" src="img/certinax-logo1.svg" alt="certinax-logo"
+        /></a>
+      </div>
+      <div class="header-title">
+        <h1>Computer science</h1>
+        <p>- TensorFlow.js</p>
+      </div>
+      <div class="header-links">
+        <nav>
+          <ul>
+            <li class="active"><a class="btn" href="/project1">Home</a></li>
+            <li><a class="btn" href="get-started.html">Get Started</a></li>
+            <li><a class="btn" href="demo.html">Demo</a></li>
+            <li><a class="btn" href="about.html">About</a></li>
+          </ul>
+        </nav>
+        <div class="link-container">
+          <a
+            href="https://github.com/Certinax/f2019cst336/tree/master/public/project1"
+            target="_blank"
+            ><img
+              class="ext-link-logo"
+              src="img/github-logo.svg"
+              alt="Github logo"
+          /></a>
+          <a
+            href="https://no.linkedin.com/in/mathias-lund-ahrn-9a8623173?trk=people-guest_profile-result-card_result-card_full-click"
+            target="_blank"
+            ><img
+              class="ext-link-logo"
+              src="img/linkedin-logo.svg"
+              alt="Linked logo"
+          /></a>
         </div>
-        <div class="header-title">
-            <h1>Computer science</h1>
-            <p>- TensorFlow.js</p>
-        </div>
-        <div class="header-links">
-            <nav>
-                <ul>
-                    <li class="active"><a class="btn" href="/project1">Home</a></li>
-                    <li><a class="btn" href="get-started.html">Get Started</a></li>
-                    <li><a class="btn" href="demo.html">Demo</a></li>
-                    <li><a class="btn" href="about.html">About</a></li>
-                </ul>
-            </nav>
-            <div class="link-container">
-                <a href="https://github.com/Certinax/f2019cst336/tree/master/public/project1" target="_blank"><img class="ext-link-logo" src="img/github-logo.svg" alt="Github logo"></a>
-                <a href="https://no.linkedin.com/in/mathias-lund-ahrn-9a8623173?trk=people-guest_profile-result-card_result-card_full-click" target="_blank"><img class="ext-link-logo" src="img/linkedin-logo.svg" alt="Linked logo"></a>
-            </div>
-        </div>
+      </div>
     </header>
 
     <main>
-        <div class="main-container">
-            <div class="main-card">
-                <div class="first-column">
-                    <div class="first-row">
-                        <img src="img/tensorflow_logo.png" alt="Profile picture">
-                    </div>
-                    <div class="second-row">
-                        <div class="fact-box">
-                            <h4>TensorFlow.js</h4>
-                            <br>
-                            <p>A library for machine learning in JavaScript</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="second-column">
-                    <div class="about-box">
-                        <p>
-                            This is a library where you can develop Machine Learning models in JavaScript and use it directly in the browser. The library is built on top of the TensorFlow which is based on C++. It is developed by the Google Brain team.
-                        </p>
-                    </div>
-                </div>
+      <div class="main-container">
+        <div class="main-card">
+          <div class="first-column">
+            <div class="first-row">
+              <img src="img/tensorflow_logo.png" alt="Profile picture" />
             </div>
-        </div>
-        <div class="main-container">
-            <div class="main-card">
-                <div class="one-column">
-                    <h4 style="text-align: center">How it works</h4>
-                    <hr>
-                    <div class="text-content">
-                        <p>There are three major ways you can use this library</p>
-                        <ul>
-                            <li><a href="https://www.tensorflow.org/js/models/" target="_blank">Run existing models</a></li>
-                            <li><a href="https://www.tensorflow.org/js/tutorials/transfer/what_is_transfer_learning" target="_blank">Retrain existing models</a></li>
-                            <li><a href="https://www.tensorflow.org/js/tutorials" target="_blank">Develop ML with JavaScript</a></li>
-                        </ul>
-                        <br/>
-                        <p>This site will include a page with links to demos and how to get started.</p>
-                        <br/>
-                        <p>Source</p>
-                        <a href="https://www.tensorflow.org/" target="_blank">[Link] TensorFlow official website</a>
-                    </div>
-                </div>
+            <div class="second-row">
+              <div class="fact-box">
+                <h4>TensorFlow.js</h4>
+                <br />
+                <p>A library for machine learning in JavaScript</p>
+              </div>
             </div>
+          </div>
+          <div class="second-column">
+            <div class="about-box">
+              <p>
+                This is a library where you can develop Machine Learning models
+                in JavaScript and use it directly in the browser. The library is
+                built on top of the TensorFlow which is based on C++. It is
+                developed by the Google Brain team.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="main-container">
+        <div class="main-card">
+          <div class="one-column">
+            <h4 style="text-align: center">How it works</h4>
+            <hr />
+            <div class="text-content">
+              <p>There are three major ways you can use this library</p>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.tensorflow.org/js/models/"
+                    target="_blank"
+                    >Run existing models</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.tensorflow.org/js/tutorials/transfer/what_is_transfer_learning"
+                    target="_blank"
+                    >Retrain existing models</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.tensorflow.org/js/tutorials"
+                    target="_blank"
+                    >Develop ML with JavaScript</a
+                  >
+                </li>
+              </ul>
+              <br />
+              <p>
+                This site will include a page with links to demos and how to get
+                started.
+              </p>
+              <br />
+              <p>Source</p>
+              <a href="https://www.tensorflow.org/" target="_blank"
+                >[Link] TensorFlow official website</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <div class="box1">
-            <p>Phone: +1 628-629-4355 | +47 908 55 313</p>
-            <p>Email: mahrn@csumb.edu</p>
-        </div>
-        <div class="box2">
-            <p>Mathias Lund Ahrn | Certinax © <span id="currentDate"></span></p>
-        </div>
-        <div class="box3">
-
-        </div>
+      <div class="box1">
+        <p>Phone: +1 628-629-4355 | +47 908 55 313</p>
+        <p>Email: mahrn@csumb.edu</p>
+      </div>
+      <div class="box2">
+        <p>Mathias Lund Ahrn | Certinax © <span id="currentDate"></span></p>
+      </div>
+      <div class="box3"></div>
     </footer>
 
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
