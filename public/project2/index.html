@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/main.css" />
-    <!--<link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Roboto&display=swap" rel="stylesheet">-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
@@ -23,26 +22,26 @@
   <body>
     <header>
       <div class="header-logo">
-        <a href="/project1"
+        <a href="/project2"
           ><img id="ctx-logo" src="img/certinax-logo1.svg" alt="certinax-logo"
         /></a>
       </div>
       <div class="header-title">
-        <h1>Computer science</h1>
-        <p>- TensorFlow.js</p>
+        <h1>Signup page</h1>
+        <p>- Get connected</p>
       </div>
       <div class="header-links">
         <nav>
           <ul>
-            <li class="active"><a class="btn" href="/project1">Home</a></li>
-            <li><a class="btn" href="get-started.html">Get Started</a></li>
-            <li><a class="btn" href="demo.html">Demo</a></li>
-            <li><a class="btn" href="about.html">About</a></li>
+            <li class="active"><a class="btn" href="/project2">Home</a></li>
+            <li><a class="btn" href="#">SiteX</a></li>
+            <li><a class="btn" href="#">SiteY</a></li>
+            <li><a class="btn" href="#">SiteZ</a></li>
           </ul>
         </nav>
         <div class="link-container">
           <a
-            href="https://github.com/Certinax/f2019cst336/tree/master/public/project1"
+            href="https://github.com/Certinax/f2019cst336/tree/master/public/project2"
             target="_blank"
             ><img
               class="ext-link-logo"
@@ -64,70 +63,68 @@
     <main>
       <div class="main-container">
         <div class="main-card">
-          <div class="first-column">
-            <div class="first-row">
-              <img src="img/tensorflow_logo.png" alt="Profile picture" />
-            </div>
-            <div class="second-row">
-              <div class="fact-box">
-                <h4>TensorFlow.js</h4>
-                <br />
-                <p>A library for machine learning in JavaScript</p>
-              </div>
-            </div>
-          </div>
-          <div class="second-column">
-            <div class="about-box">
-              <p>
-                This is a library where you can develop Machine Learning models
-                in JavaScript and use it directly in the browser. The library is
-                built on top of the TensorFlow which is based on C++. It is
-                developed by the Google Brain team.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="main-container">
-        <div class="main-card">
           <div class="one-column">
-            <h4 style="text-align: center">How it works</h4>
+            <h4 style="text-align: center">Free signup</h4>
             <hr />
             <div class="text-content">
-              <p>There are three major ways you can use this library</p>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.tensorflow.org/js/models/"
-                    target="_blank"
-                    >Run existing models</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.tensorflow.org/js/tutorials/transfer/what_is_transfer_learning"
-                    target="_blank"
-                    >Retrain existing models</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.tensorflow.org/js/tutorials"
-                    target="_blank"
-                    >Develop ML with JavaScript</a
-                  >
-                </li>
-              </ul>
-              <br />
-              <p>
-                This site will include a page with links to demos and how to get
-                started.
-              </p>
-              <br />
-              <p>Source</p>
-              <a href="https://www.tensorflow.org/" target="_blank"
-                >[Link] TensorFlow official website</a
-              >
+              <div class="form-style">
+                <form action="" method="get">
+                  <fieldset>
+                    <legend>Register</legend>
+                    <label for="username">Username</label>
+                    <input
+                      id="username"
+                      type="text"
+                      name="username"
+                      placeholder="Username"
+                    />
+                    <label for="firstname">Firstname</label>
+                    <input
+                      id="firstname"
+                      type="text"
+                      name="firstname"
+                      placeholder="Firstname"
+                    />
+                    <label for="lastname">Lastname</label>
+                    <input
+                      id="lastname"
+                      type="text"
+                      name="lastname"
+                      placeholder="Lastname"
+                    />
+                    <label for="password">Password</label>
+                    <input
+                      id="password"
+                      type="password"
+                      name="password"
+                      placeholder="Password"
+                    />
+                    <label for="re_password">Re-enter password</label>
+                    <input
+                      id="re_password"
+                      type="password"
+                      name="re_password"
+                      placeholder="Retype password"
+                    />
+                    <button
+                      type="submit"
+                      class="btn2"
+                      value="submit"
+                      name="submit"
+                    >
+                      Sgnup
+                    </button>
+                    <button
+                      type="button"
+                      class="btn2-cancel"
+                      value="button"
+                      name="button"
+                    >
+                      Cancel
+                    </button>
+                  </fieldset>
+                </form>
+              </div>
             </div>
           </div>
         </div>
