@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Objects, prototypes, new</title>
+  </head>
+  <body>
+    <script>
+      const carT = {
+        make: "lamborghini",
+        model: "huracan",
+        year: 2019,
+        accelerate: function(rate) {
+          console.log("this is what this is: ", this);
+          console.log("accelerating at: ", rate);
+        }
+      };
+
+      // carT.accelerate(15);
+      // carT["accelerate"](10);
+
+      function Car(make, model, year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.accelerate = function(rate) {
+          console.log("this is what this is: ", this);
+          console.log("accelerating at: ", rate);
+        };
+
+        // return this;   -- Handled by new-keyword
+      }
+
+      // The new-keyword return this;
+      const porsche = new Car("porsche", "911", 2017);
+
+      console.log("porsche", porsche);
+    </script>
+  </body>
+</html>
