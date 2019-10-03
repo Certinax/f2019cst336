@@ -8,10 +8,11 @@
   </head>
   <body>
     <script>
-      const carT = {
+      const lamborghini = {
         make: "lamborghini",
         model: "huracan",
         year: 2019,
+        hp: 700,
         accelerate: function(rate) {
           console.log("this is what this is: ", this);
           console.log("accelerating at: ", rate);
@@ -22,21 +23,60 @@
       // carT["accelerate"](10);
 
       function Car(make, model, year) {
+        let self = this;
         this.make = make;
         this.model = model;
         this.year = year;
         this.accelerate = function(rate) {
+          console.log("this is what self is", self);
           console.log("this is what this is: ", this);
           console.log("accelerating at: ", rate);
         };
 
+        // this is used for binding Car's this to the function
+        // demo.bind(this)();
+
+        // This is like a private function inside function Car()
+        // function demo() {
+        //   console.log("demo() this is what self is", self);
+        //   console.log("demo() this is what this is: ", this);
+        // }
+        // new demo(); // This gives demo() its own this
         // return this;   -- Handled by new-keyword
       }
 
+      // Prototypes assigns functions to other objects/functions
+      // Prototype is also a special object in JS which add objects/functions to other objects
+      // This also adds __proto__ so that all Cars points to these functions
+      Car.prototype.decelerate = function(rate) {
+        console.log("Cd(r) this is what this is: ", this);
+        console.log("Cd(r): decelerating at: ", rate);
+      };
+
+      // WHEN WE ARE NEW'ING' A FUNCTION, IT TURNS INTO AN OBJECT
       // The new-keyword return this;
       const porsche = new Car("porsche", "911", 2017);
 
-      console.log("porsche", porsche);
+      //console.log("porsche", porsche);
+
+      /**
+       *** This shows different ways of using objects and accessing its data/functions
+       **/
+      // console.log("Model of car is: ", porsche.model);
+      // console.log("Model of car is: ", porsche["model"]);
+      porsche.accelerate(15);
+      porsche.decelerate(-55);
+      // porsche["accelerate"](9.5);
+
+      // adding decelerate to lamborghini object
+      // lamborghini.decelerate = function() {
+      //   console.log("ld() has a this of", this);
+      // };
+
+      // Rehydrate JSON object
+      Object.setPrototypeOf(lamborghini, new Car());
+
+      lamborghini.decelerate(-20);
     </script>
   </body>
 </html>
