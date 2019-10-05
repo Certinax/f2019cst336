@@ -7,10 +7,7 @@
 var app = require("../app");
 var debug = require("debug")("internet-programming:server");
 var http = require("http");
-var dotenv = require("dotenv");
-
-// Load config file
-dotenv.config();
+require("dotenv").config();
 
 /**
  * Get port from environment and store in Express.
