@@ -83,7 +83,108 @@
       </div>
     </nav>
     <div class="container">
-      <h1 class="text-center mt-3">Default table with hover effect</h1>
+      <h1 class="text-center mt-3">Video</h1>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/wxyH1-B4Y7s"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-6">
+                <button id="seeComments" class="btn btn-primary">
+                  See comments
+                </button>
+              </div>
+              <div class="col-md-6">
+                <button id="answerQuestions" class="btn btn-primary">
+                  Answer Question
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-4">
+                <button id="likeBtn" value="like" class="btn">
+                  <img
+                    src="img/like.png"
+                    widht="50"
+                    height="50"
+                    alt="Likebutton"
+                  />
+                </button>
+              </div>
+              <div class="col-md-4">
+                <button id="cancelLikeBtn" value="cancel_like" class="btn">
+                  <img
+                    src="img/cancel-like.png"
+                    width="50"
+                    height="50"
+                    alt="CancelLikeButton"
+                  />
+                </button>
+              </div>
+              <div class="col-md-4">
+                <span id="numberOfLikes"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-4">
+                <button id="dislikeBtn" value="dislike" class="btn">
+                  <img
+                    src="img/dislike.png"
+                    widht="50"
+                    height="50"
+                    alt="DislikeButton"
+                  />
+                </button>
+              </div>
+              <div class="col-md-4">
+                <button
+                  id="cancelDislikeBtn"
+                  value="cancel_dislike"
+                  class="btn"
+                >
+                  <img
+                    src="img/cancel-dislike.png"
+                    width="50"
+                    height="50"
+                    alt="CancelDislikeButton"
+                  />
+                </button>
+              </div>
+              <div class="col-md-4">
+                <span id="numberOfDislikes"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="commentList" class="container mt-3"></div>
+
+      <div class="container" style="display: none;" id="questionFrame">
+        <h4 class="text-center">What is this video about?</h4>
+        <span id="feedback"></span>
+        <select class="selectpicker" name="answer" id="answer">
+          <option value="">Choose your answer</option>
+          <option value="Training">Training</option>
+          <option value="Computers">Computers</option>
+          <option value="Cars">Cars</option>
+        </select>
+      </div>
+      <!-- <h1 class="text-center mt-3">Default table with hover effect</h1>
       <table class="table table-bordered shadow table-hover">
         <thead>
           <tr>
@@ -156,7 +257,7 @@
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- end container -->
     <nav class="navbar static-bottom navbar-dark bg-dark">
