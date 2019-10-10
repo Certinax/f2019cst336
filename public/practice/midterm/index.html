@@ -32,42 +32,48 @@
         <td>Discount</td>
         <td></td>
         <td></td>
-        <td></td>
+        <td id="discountSum"></td>
       </tr>
       <tr>
         <td>Shipping</td>
         <td></td>
         <td></td>
-        <td></td>
+        <td id="shipping"></td>
       </tr>
       <tr>
         <td>Subtotal</td>
         <td></td>
         <td></td>
-        <td></td>
+        <td id="subTotal"></td>
       </tr>
       <tr>
         <td>Tax (10%)</td>
         <td></td>
         <td></td>
-        <td></td>
+        <td id="tax"></td>
       </tr>
       <tr>
         <td>Total</td>
         <td></td>
         <td></td>
-        <td></td>
+        <td id="total"></td>
       </tr>
     </table>
 
-    <br /><br />
+    <h3>Shipping&Handling</h3>
+    <select name="shipping" id="shippingMethod">
+      <option value="0">Choose delivery</option>
+      <option value="25">Next-day delivery: $25.00</option>
+      <option value="20">Three-day delivery: $20.00</option>
+      <option value="7">Regular delivery: $7.00</option>
+    </select>
 
+    <br /><br />
+    <p id="discountMsg"></p>
     <strong>Promo Code: </strong> <input id="promoCode" type="text" />
     <button id="promoButton" class="btn btn-primary">
       Apply
     </button>
-
-    <h3>Shipping & handling</h3>
 
     <script src="js/main.js"></script>
   </body>
