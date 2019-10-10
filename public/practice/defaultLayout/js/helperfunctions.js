@@ -1,7 +1,7 @@
 /**
  * Function that accepts any html element and access the numeric value
  * @param element is any HTML-element
- * @returns any number
+ * @returns any number if any, else 0
  */
 function convertToNumber(element) {
   if (element.html()) {
