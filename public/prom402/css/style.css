@@ -16,7 +16,8 @@ body {
 }
 
 .footz {
-  position: absolute;
+  width: 100% !important;
+  position: absolute !important;
   bottom: 0;
 }
 
