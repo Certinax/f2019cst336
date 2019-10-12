@@ -21,6 +21,15 @@ body {
   bottom: 0;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: grey;
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+}
+
 @media (max-width: 748px) {
   #logo {
     width: 60px;
