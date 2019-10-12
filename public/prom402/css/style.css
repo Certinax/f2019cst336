@@ -22,7 +22,7 @@ body {
 }
 
 footer {
-  position: absolute;
+  position: sticky !important;
   bottom: 0;
   background-color: grey;
   height: 60px;
