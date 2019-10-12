@@ -15,6 +15,11 @@ body {
   padding-top: 125px;
 }
 
+.footz {
+  position: absolute;
+  bottom: 0;
+}
+
 @media (max-width: 748px) {
   #logo {
     width: 60px;
