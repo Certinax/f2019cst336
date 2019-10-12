@@ -1,0 +1,23 @@
+h1 {
+  font-family: "Lato", sans-serif !important;
+}
+
+.title {
+  color: #f9f9f9;
+  font-size: 1.6rem;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 748px) {
+  #logo {
+    width: 60px;
+    height: 30px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+}
