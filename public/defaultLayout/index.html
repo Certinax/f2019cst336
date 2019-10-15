@@ -40,131 +40,136 @@
     <title>Default Layout</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-      <a href="/practice/defaultLayout" class="navbar-brand"
-        ><img
-          src="img/certinax-logo1.svg"
-          width="150"
-          height="75"
-          alt="CertinaxLogo"
-      /></a>
-      <div class="navbar-text">
-        <h1 class="title">Default Layout</h1>
-      </div>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container">
-      <h1 class="text-center mt-3">Default table with hover effect</h1>
-      <table class="table table-bordered shadow table-hover">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h1 class="text-center mt-5">Input example</h1>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-default"
-            >Default</span
-          >
+    <div class="content">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <a href="/practice/defaultLayout" class="navbar-brand"
+          ><img
+            id="logo"
+            src="img/certinax-logo1.svg"
+            width="150"
+            height="75"
+            alt="CertinaxLogo"
+        /></a>
+        <div class="navbar-text">
+          <h1 class="title">Default Layout</h1>
         </div>
-        <input
-          type="text"
-          class="form-control"
-          aria-label="Sizing example input"
-          aria-describedby="inputGroup-sizing-default"
-          placeholder="Type in anything..."
-        />
-        <div class="input-group-append">
-          <button
-            class="btn btn-outline-secondary"
-            type="button"
-            id="button-addon2"
-          >
-            Button
-          </button>
-        </div>
-      </div>
-
-      <h1 class="text-center mt-5">Dropdown example</h1>
-      <div class="dropdown">
         <button
-          class="btn btn-secondary dropdown-toggle"
+          class="navbar-toggler"
           type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-haspopup="true"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
           aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          Dropdown button
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <h1 class="text-center mt-3">Default table with hover effect</h1>
+        <table class="table table-bordered shadow table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h1 class="text-center mt-5">Input example</h1>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default"
+              >Default</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+            placeholder="Type in anything..."
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-outline-secondary"
+              type="button"
+              id="button-addon2"
+            >
+              Button
+            </button>
+          </div>
+        </div>
+
+        <h1 class="text-center mt-5">Dropdown example</h1>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Dropdown button
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
         </div>
       </div>
+      <!-- end container -->
     </div>
-    <!-- end container -->
-    <nav class="navbar static-bottom navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Fixed bottom</a>
+    <nav class="navbar footerz navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Logo</a>
       <span class="navbar-text"
         >Certinax &copy; <span id="year"></span> | Mathias Lund Ahrn</span
       >
     </nav>
+
     <script src="js/main.js"></script>
   </body>
 </html>
