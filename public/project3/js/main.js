@@ -107,9 +107,13 @@ $("#search").on("click", async function() {
     .toLowerCase()
     .trim();
   let realm = $("#realms").val();
-  const media = await getCharacterMedia(name, realm);
-  const info = await getCharacterInfo(name, realm);
-  buildProfile(media, info);
+  try {
+    const info = await getCharacterInfo(name, realm);
+    const media = await getCharacterMedia(name, realm);
+    buildProfile(media, info);
+  } catch (err) {
+    showError(err);
+  }
 });
 
 $("#mezzoforte").on("click", async function() {
@@ -169,3 +173,41 @@ function buildProfile(media, info) {
     class: "card-text col-sm-4"
   }).appendTo("#profilerow");
 }
+
+function showError(err) {
+  $("#profile").empty();
+  $("<div></div>", {
+    id: "error_msg",
+    class: "card mb-3 shadow-sm"
+  }).appendTo("#profile");
+  $("<div></div>", {
+    id: "error_body",
+    class: "card-body"
+  }).appendTo("#error_msg");
+  $("<h6></h6>", {
+    html: "Error",
+    class: "mb-0 pb-0"
+  }).appendTo("#error_body");
+  $("<div></div>", {
+    id: "error_row",
+    class: "row mt-2"
+  }).appendTo("#error_body");
+  $("<p></p>", {
+    html:
+      "Error code: " +
+      err.responseJSON.code +
+      "<br/>" +
+      err.responseJSON.detail,
+    class: "card-text col-sm-6"
+  }).appendTo("#error_row");
+  $("<p></p>", {
+    html: "Character not found!",
+    class: "card-text col-sm-6"
+  }).appendTo("#error_row");
+}
+
+("https://eu.api.blizzard.com/profile/wow/character/grim-batol/orihgas?namespace=profile-eu&locale=en_GB&access_token=EUGaJxlH1Nncu8T3EuhK73i8lbE1i6OEDN");
+
+("https://eu.api.blizzard.com/profile/wow/character/grim-batol/orihgas/character-media?namespace=profile-eu&locale=en_GB&access_token=EUGaJxlH1Nncu8T3EuhK73i8lbE1i6OEDN");
+
+("https://eu.api.blizzard.com/profile/wow/character/grim-batol/lavspent/character-media?namespace=profile-eu&locale=en_GB&access_token=EUGaJxlH1Nncu8T3EuhK73i8lbE1i6OEDN");
