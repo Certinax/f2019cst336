@@ -8,14 +8,6 @@ p {
   font-family: "Raleway", sans-serif;
 }
 
-/* .content {
-  height: calc(100vh - 60px);
-} */
-
-.footerz {
-  height: 60px;
-}
-
 #orihgas:hover,
 #mezzoforte:hover {
   cursor: pointer;
