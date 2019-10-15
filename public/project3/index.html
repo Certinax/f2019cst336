@@ -40,7 +40,6 @@
     <title>Project 3</title>
   </head>
   <body>
-    <div class="content">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <a href="/project3" class="navbar-brand"
           ><img
@@ -72,21 +71,13 @@
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
           </ul>
         </div>
       </nav>
 
+      <div class="content">
       <div class="container">
-        <h1 class="text-center mt-5">WoW Armory Search</h1>
+        <h1 class="text-center mt-2">WoW Armory Search</h1>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-default"
@@ -94,6 +85,7 @@
             >
           </div>
           <input
+            id="characterSearch"
             type="text"
             class="form-control"
             aria-label="Sizing example input"
@@ -112,11 +104,77 @@
           </div>
           <select name="realms" id="realms" class="form-control"></select>
         </div>
+
+        <!-- Card section -->
+        <div class="row mt-4">
+          <div class="col-6">
+            <div
+              id="orihgas"
+              class="card mb-3 shadow-sm"
+              style="max-width: 540px;"
+            >
+              <div class="row no-gutters">
+                <div class="col-sm-4">
+                  <img
+                    id="orihpic"
+                    src=""
+                    class="card-img"
+                    alt="OrihgasProfilePic"
+                  />
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Orihgas</h5>
+                    <p class="card-text">
+                      Grim Batol
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Predefined search</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div
+              id="mezzoforte"
+              class="card mb-3 shadow-sm"
+              style="max-width: 540px;"
+            >
+              <div class="row no-gutters">
+                <div class="col-sm-4">
+                  <img
+                    id="mezzopic"
+                    src=""
+                    class="card-img"
+                    alt="MezzoforteProfilePic"
+                  />
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Mezzoforte</h5>
+                    <p class="card-text">
+                      Grim Batol
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Predefined search</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Profile -->
+        <div id="profile"></div>
+      </div>
       </div>
       <!-- end container -->
     </div>
-    <nav class="navbar footerz navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Logo</a>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="https://github.com/Certinax/f2019cst336/tree/master/public/project3" target="_blank"><img src="img/github-logo.svg" width=25 height=25 alt=""></a>
+
       <span class="navbar-text"
         >Certinax &copy; <span id="year"></span> | Mathias Lund Ahrn</span
       >
