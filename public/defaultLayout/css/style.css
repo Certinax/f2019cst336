@@ -1,9 +1,7 @@
-h1 {
-  font-family: "Lato", sans-serif;
-}
-
 .title {
+  font-family: "Lato", sans-serif;
   color: #f9f9f9;
+  font-size: 1.6rem;
 }
 
 p {
