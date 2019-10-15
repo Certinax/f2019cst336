@@ -12,6 +12,7 @@
     "express": "~4.16.1",
     "hbs": "^4.0.5",
     "http-errors": "~1.6.3",
+    "mdbootstrap": "^4.8.10",
     "morgan": "~1.9.1",
     "node-fetch": "^2.6.0"
   }
