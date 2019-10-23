@@ -26,4 +26,7 @@ app.use("/", function(req, res, next) {
 const useless = require("./useless");
 app.use("/", useless.nothing);
 
-app.listen(3000);
+const port = 3000;
+console.log("Listening at port: ", port);
+
+app.listen(port);
