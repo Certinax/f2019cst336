@@ -1,0 +1,34 @@
+<h1 class="text-center mt-3">{{title}}</h1>
+<hr>
+<p class="text-primary">{{message}}</p>
+
+<script>
+  // Given a first, middle and lastname, return a full name
+  function getFullName(first, middle, last) {
+    let fullName = first + " " + middle + " " + last;
+    return fullName;
+  }
+
+  console.log("promises.hbs");
+
+  let fullName = getFullName("John", "Adam", "Smith");
+
+  // Create a function that takes in a string as a parameter and returns another 
+  // string of random letters produced by randomly jumbling the letters of the input string. 
+  // Every letter must be used once and only once.
+  function sendMeString(input) {
+    let formatInput = [...input.toLowerCase()]
+    let uniqueInput = Array.from(new Set(formatInput));
+    //console.log(Array.from({ length: 5 }, (v, k) => Math.floor(Math.random() * 5)))
+  }
+
+  sendMeString("TEST");
+
+  // Modify the function in #1 by passing in an object by reference into your 
+  // function, then setting a property on that object as the means by which you return the jumbled value.
+
+  // Convert the function in #1 to using a callback function to pass back the jumbled value.
+
+  // Convert the callback function in #3 to use promises.
+
+</script>
