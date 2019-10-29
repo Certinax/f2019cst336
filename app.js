@@ -9,6 +9,7 @@ var usersRouter = require("./routes/users");
 var postsRouter = require("./routes/posts");
 var routesRouter = require("./routes/classExercise/routes");
 var exerciseRouter = require("./routes/exercise/index");
+var project4Router = require("./routes/project4/index");
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use("/users", usersRouter);
 app.use("/posts", postsRouter);
 app.use("/routes", routesRouter);
 app.use("/exercises", exerciseRouter);
+app.use("/project4", project4Router);
 
 // app.get("/pixabay/api/", function(req, res, next) {
 //   res.send("Hello");
