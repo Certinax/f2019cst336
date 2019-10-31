@@ -1,0 +1,51 @@
+<div class="main-container">
+  <div class="main-card">
+    <div class="one-column">
+      <h4 style="text-align: center">Getting started</h4>
+      <hr>
+      <div class="text-content">
+        <p>How to add TensorFlow.js to your project</p>
+        <br>
+        <p>Add with an import in head</p>
+        <pre>
+          <code><br>&lt;script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0">&lt;script&gt;</code>
+        </pre>
+        <br>
+        <p>Or use npm/yarn</p>
+        <pre>
+          <code><br>npm install @tensorflow/tfjs</code>
+        </pre>
+        <br>
+        <pre>
+          <code><br>yarn add @tensorflow/tfjs</code>
+        </pre>
+        <br>
+        <p>TensorFlow - What is a tensor?</p>
+        <br />
+        <p>A tensor is basically a generalization of vectors and matrices to higher dimensions. They can be viewed at as
+          multidimensional array where you can additional information and data.</p>
+        <br>
+        <h4>Example on how to create a tensor from a flat array</h4>
+        <pre>
+          <code><br>const shape = [2,2];<br>const b = tf.tensor([1, 2, 3, 4], shape);<br>console.log('shape:', b.shape);<br>b.print();</code>
+        </pre>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main-container">
+  <div class="main-card">
+    <div class="one-column">
+      <h4 style="text-align: center">Tensor</h4>
+      <hr>
+      <div class="text-content">
+        <p>Simple illustration between a vector, matrix and a 3-way tensor</p>
+        <br />
+        <img id="tensor-pic" src="img/tensor_example1.png" alt="Illustration of a tensor">
+        <br>
+        <a href="https://medium.com/@mohammadbashiri93/tensor-decomposition-in-python-f1aa2f9adbf4"
+          target="_blank">[Picture source]</a>
+      </div>
+    </div>
+  </div>
+</div>
