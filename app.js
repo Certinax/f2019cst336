@@ -4,6 +4,7 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var hbs = require("hbs");
+const session = require("express-session");
 
 // Register partials for hbs
 hbs.registerPartials(__dirname + "/views/partials");
@@ -15,8 +16,20 @@ var routesRouter = require("./routes/classExercise/routes");
 var exerciseRouter = require("./routes/exercise/index");
 var project4Router = require("./routes/project4/index");
 var mysqlRouter = require("./public/mysql/router");
+var authRouter = require("./public/auth/index");
 
 var app = express();
+
+// Enable session
+app.set("trust proxy", 1); // trust first proxy
+app.use(
+  session({
+    secret: "keyboard cat",
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: true }
+  })
+);
 
 // view engine setup, this is used for the .render() functions.
 app.set("views", path.join(__dirname, "views"));
@@ -36,6 +49,7 @@ app.use("/routes", routesRouter);
 app.use("/exercises", exerciseRouter);
 app.use("/project4", project4Router);
 app.use("/mysql", mysqlRouter);
+app.use("/auth", authRouter);
 
 // app.get("/pixabay/api/", function(req, res, next) {
 //   res.send("Hello");
